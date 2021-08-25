@@ -109,3 +109,37 @@
         
         });
 </script>
+
+// Four Grid Images Section
+div.another-mattress-description>h3{text-align:left;text-transform:uppercase;color:#fff;font-weight:600;font-family:Almarai!important;letter-spacing:4px;font-size:24px}
+div.another-mattress-description>p{color:#fff;font-size: 18px;}
+
+
+<div class="row banner-most-affordable position-relative mx-auto mt-5 d-flex" style="width: 95%;">
+    <div class="col-md-8 col-sm-6" style="padding: 0 20px 0 0;">
+        <img class="position-relative w-100 h-100" src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/bed-top-view.png?t=1623734922'}}" />
+        <div class="another-mattress night-div position-absolute" style="position: absolute;transform: translateY(-50%);bottom: 0%;left: 5%;margin: 0 auto;">
+            <div class="another-mattress-img animation-element slide-left-long in-view">
+                <img class="lazyload" src=" https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/nightsleeptrial.png?t=1623227850 ">
+            </div>
+            <div class="another-mattress-description night-desc">
+                <h3 class="">100-Night Sleep Trial</h3>
+                <p class="">Why settle for a 10-minute mattress trial in-store where <br>everyone's looking when you can try it out for 100 nights in the<br> comfort of your own home?</p>
+                <a href="/sleep-trial/" class="learn-button" style="color: #1fc0fb; font-family: Almarai!important; font-size: 18px;">Learn More...</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6" style="padding: 0 0 0 15px;" >
+        <img class="position-relative w-100" src="{{cdn 'https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/certified-prod.png?t=1623220777'}}" />
+        <div class="another-mattress night-div position-absolute" style="position: absolute;transform: translateY(-50%);bottom: -10%;left: 10%;margin: 0 auto;">
+            <div class="another-mattress-img animation-element slide-left-long in-view">
+                <img class="lazyload" src=" https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/puffy-certipur-us-certification-seal.png?t=1623227851 ">
+            </div>
+            <div class="another-mattress-description night-desc">
+                <h3 class="">Certified<br> Products</h3>
+                <p class="">Our mattresses are <b>CertiPUR-US®</b> and <br> STANDARD 100 <b> OEKO-TEX® certified.</b></p>
+            </div>
+        </div>
+      </div>
+</div>
