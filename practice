@@ -1,0 +1,43 @@
+
+<div id="count">
+    <input id="btn btn_1" onClick="clickValue(this.id)" value="a" >
+    <button id="btn btn_2" onClick="clickValue(this.id)" value="b">Button 2</button>
+    <button id="btn btn_3" onClick="clickValue(this.id)" value="c">Button 3</button>
+</div>
+
+<script>
+//        $(function(){
+//          var count = $('.count button').length;
+          const button = document.getElementById('btn');
+          const length = document.getElementById('count').children.length;
+          console.log(length);
+          
+            for (var i = 0; i < length; i++) {
+                button.innerText= i;
+                button.addEventListener("click", function() {
+                    console.log(i)
+                    })
+                }
+          
+//        });
+//    const button = document.getElementById('count').children.value;
+//    console.log(button);
+//          function clickValue(valueID){
+//                 
+//                const length = document.getElementById('count').children.length;
+//                 for (var i = 0; i < length; i++) {
+//                      alert(valueID);
+//                 }
+//              }
+</script>
+
+<!--
+<button id="3" onClick="reply_click(this.id)">B3</button>
+    
+<script type="text/javascript">
+  function reply_click(clicked_id)
+  {
+      alert(clicked_id);
+  }
+</script>
+-->
