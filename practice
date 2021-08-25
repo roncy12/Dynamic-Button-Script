@@ -56,3 +56,30 @@
                 };
             }
     </script>
+    
+    
+        <button class="btn" id="1">BUTTON 1  <i class="fa fa-plus"></i></button>
+    <button class="btn" id="2">BUTTON 2  <i class="fa fa-plus"></i></button>
+
+    <script>
+        $(document).ready(function(){
+        var buttons = document.querySelectorAll('.btn');
+        var icon = document.querySelectorAll('.fa .fa-plus');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function() {
+
+
+                    $('.fa').removeClass('fa-plus');
+                     $('.fa').addClass('fa-minus');
+                    
+                    
+                    var index = this.getAttribute('id');
+                    alert(index);
+                    
+//                    var iconatt = this.getAttribute('class');
+//                    alert(icon);
+                };
+            }
+            
+            });
+    </script>
