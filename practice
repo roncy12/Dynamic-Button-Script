@@ -41,3 +41,18 @@
   }
 </script>
 -->
+//GUMAGANATO
+
+    <button class="btn" id="1">VOTE</button>
+    <button class="btn" id="2">VOTE</button>
+
+    <script>
+        var buttons = document.querySelectorAll('.btn');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function() {
+                    var index = this.getAttribute('id');
+                    var img = document.querySelector('#img' + index);
+                    alert(index);
+                };
+            }
+    </script>
