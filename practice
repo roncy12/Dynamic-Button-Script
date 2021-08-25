@@ -83,3 +83,29 @@
             
             });
     </script>
+    
+    
+<button class="btn" id="1">BUTTON 1  <i class="fa-1 fa-plus p1"></i></button>
+<button class="btn" id="2">BUTTON 2  <i class="fa-2 fa-plus p2"></i></button>
+<button class="btn" id="3">BUTTON 3  <i class="fa-3 fa-plus p2"></i></button>
+
+<script>
+    $(document).ready(function(){
+    var buttons = document.querySelectorAll('.btn');
+    
+    var icon = document.querySelectorAll('.fa .fa-plus');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].onclick = function() {
+                var index = this.getAttribute('id');
+
+                if(index === index){
+                    $('.fa-'+index).removeClass('fa-plus');
+                    $('.fa-'+index).addClass('fa-minus');
+                    console.log(index);
+                }
+                  alert(index);
+            };
+        }
+        
+        });
+</script>
